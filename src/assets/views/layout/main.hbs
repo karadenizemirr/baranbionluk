@@ -1,220 +1,305 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="zxx">
+
 <head>
-  <meta charset="UTF-8" >
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-  <title>{{title}} - maviCharge</title>
+   <meta charset="utf-8">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <title> {{title}} - MaviCharge </title>
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Style CSS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" >
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
-  <link
-    rel="shortcut icon"
-    href="/public/images/favicon.png"
-    type="image/png"
-  >
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap"
-    rel="stylesheet"
-  >
-  <link
-    href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap"
-    rel="stylesheet"
-  >
-  <link
-    rel="stylesheet"
-    href="/public/libs/line-awesome/css/line-awesome.min.css"
-  >
-  <link
-    rel="stylesheet"
-    href="/public/libs/bootstrap/css/bootstrap.min.css"
-  >
-  <link
-    rel="stylesheet"
-    href="/public/libs/swiper/swiper-bundle.min.css"
-  >
-  <link rel="stylesheet" href="/public/css/style.css" >
-  <script src="https://unpkg.com/zooming/build/zooming.min.js"></script>
+   <!-- Place favicon.ico in the root directory -->
+   <link rel="shortcut icon" type="image/x-icon" href="/public/img/favicon.png">
 
+   <!-- CSS here -->
+   <link rel="stylesheet" href="/public/app/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/public/app/css/meanmenu.min.css">
+   <link rel="stylesheet" href="/public/app/css/animate.css">
+   <link rel="stylesheet" href="/public/app/css/swiper-bundle.min.css">
+   <link rel="stylesheet" href="/public/app/css/slick.css">
+   <link rel="stylesheet" href="/public/app/css/backtotop.css">
+   <link rel="stylesheet" href="/public/app/css/magnific-popup.css">
+   <link rel="stylesheet" href="/public/app/css/fontawesome-pro.css">
+   <link rel="stylesheet" href="/public/app/css/spacing.css">
+   <link rel="stylesheet" href="/public/app/css/main.css">
 </head>
+
 <body>
-<div id="wrapper">
-  <div id="preload" class="preload"><div class="spin"></div></div>
-  <!-- BEGIN SITE HEADER -->
-  <header id="header" class="site-header is-transparent">
-    <div class="container-fluid">
-      <div class="row flex-align-c inner">
-        <div class="col-lg-3 col-6">
-          <div class="header-left flex flex-align-c">
-            <div class="canvas-menu">
-              <div class="icon">
-                <a href="#">
-                  <svg width="30px" height="14px" viewBox="0 0 30 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g   stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                      <g transform="translate(-50.000000, -33.000000)" fill="#111111">
-                        <g id="off-menu" transform="translate(50.000000, 28.000000)">
-                          <g id="icon-menu" transform="translate(0.000000, 5.000000)">
-                            <rect id="Rectangle-1" x="0" y="0" width="30" height="3" rx="1.5"></rect>
-                            <rect id="Rectangle-2" x="0" y="11" width="20" height="3" rx="1.5"></rect>
-                          </g>
-                        </g>
-                      </g>
-                    </g>
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div class="logo d-none d-sm-block">
-              <a href="/">
-                <h1>
-                  <span class="text-primary">mavi</span>Charge
-                </h1>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-0 text-center">
-          <div class="header-center">
-            <div class="main-menu">
-              <div class="menu-action">
-                <span class="item menu-back"><i class="las la-arrow-left"></i></span>
-                <span class="item menu-close"><i class="las la-times"></i></span>
-              </div>
-              <ul>
-                <li class="is-mega-menu">
-                  <a href="/"><i class="las la-home" style="margin-right: 10px"></i>Anasayfa</a>
-                </li>
-                <li class="is-mega-menu">
-                  <a href="/services"><i class="lab la-servicestack" style="margin-right: 10px"></i>Hizmetler</a>
-                </li>
 
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-6">
-          <div class="header-right flex flex-align-c flex-content-e">
-            <div class="buttons">
-              <a href="/contact" class="button fullfield"><i class="las la-envelope"></i><span>İletişim</span></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-  <!-- END SITE HEADER -->
+   <!--[if lte IE 9]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+      <![endif]-->
 
-  <!-- BEGIN SITE MAIN -->
-  <main id="main" class="site-main">
-    <div class="site-content pt0 pb0">
-      {{{ body }}}
-    </div><!-- SITE CONTENT -->
-  </main>
-  <!-- END SITE MAIN -->
-
-  <!-- BEGIN SITE FOOTER -->
-  <footer id="footer" class="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="inner">
-          <div class="row">
-            <div class="col-lg-3">
-              <div class="footer-item footer-about">
-                <div class="logo">
-                  <a href="index.html">
-                    <h1>
-                      <span class="text-primary">mavi</span>Charge
-                    </h1>
-                  </a>
-                </div>
-                <p>Şarj istasyonlarına ulaşmanın premium yolu.</p>
-              </div>
-            </div>
-            <div class="col-lg-2">
-              <div class="footer-item footer-menu">
-                <h6>maviCharge</h6>
-                <ul>
-                  <li><a href="/services" title="About us">Servisler</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-2">
-              <div class="footer-item footer-menu">
-                <h6>Kaynak</h6>
-                <ul>
-                  <li><a href="/contact" title="Downloads">İletişim</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-2">
-              <div class="footer-item footer-menu">
-                <h6>Sosyal Medya</h6>
-                <ul>
-                  <li><a href="https://www.facebook.com" title="Facebook">Facebook</a></li>
-                  <li><a href="https://www.twitter.com" title="Twitter">Twitter</a></li>
-                  <li><a href="https://www.instagram.com" title="Instagram">Instagram</a></li>
-                  <li><a href="https://www.linkedin.com" title="Linkedin">Linkedin</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-3">
-              <div class="footer-item footer-newsletter">
-                <h6>Abone Ol</h6>
-                <p>Abone olun son gelişmelerden haberdar olun.</p>
-                <form action="#" class="newsletter">
-                  <div class="field-input">
-                    <input type="email" value="" placeholder="Email Adresi">
+   <!-- Offcanvas area start -->
+   <div class="fix">
+      <div class="offcanvas__info">
+         <div class="offcanvas__wrapper">
+            <div class="offcanvas__content">
+               <div class="offcanvas__top mb-40 d-flex justify-content-between align-items-center">
+                  <div class="offcanvas__logo">
+                     <a href="index.html">
+                        <a href="index.html" style="font-size: 30px; font-weight:900">
+                           <span class="text-primary">Mavi</span>Charge
+                        </a>
+                     </a>
                   </div>
-                  <div class="field-submit">
-                    <button>Abone Ol</button>
+                  <div class="offcanvas__close">
+                     <button>
+                        <i class="fal fa-times"></i>
+                     </button>
                   </div>
-                </form>
-              </div>
+               </div>
+               <div class="mobile-menu-2 fix mb-40"></div>
+               <nav id="mobile-menu-2">
+                  <ul>
+                     <li>
+                        <a href="/">Anasayfa</a>
+                     </li>
+                     <li>
+                        <a href="/admin">Yönetim Paneli</a>
+                     </li>
+                     <li>
+                        <a href="/mobile">Mobil Uygulama</a>
+                     </li>
+                     <li>
+                        <a href="/contact">İletişim</a>
+                     </li>
+                  </ul>
+               </nav>
+               <div class="offcanvas__contact mt-30 mb-20">
+                  <h4>İletişim Bilgileri</h4>
+                  <ul>
+                     <li class="d-flex align-items-center">
+                        <div class="offcanvas__contact-icon mr-15">
+                           <i class="fal fa-map-marker-alt"></i>
+                        </div>
+                        <div class="offcanvas__contact-text">
+                           <a target="_blank" href="#">Antalya Teknokent Ar-Ge 2 Binası Konyaaltı/ANTALYA</a>
+                        </div>
+                     </li>
+                     <li class="d-flex align-items-center">
+                        <div class="offcanvas__contact-icon mr-15">
+                           <i class="far fa-phone"></i>
+                        </div>
+                        <div class="offcanvas__contact-text">
+                           <a href="tel:+088889797697">+90 (533) 326 8607</a>
+                        </div>
+                     </li>
+                     <li class="d-flex align-items-center">
+                        <div class="offcanvas__contact-icon mr-15">
+                           <i class="fal fa-envelope"></i>
+                        </div>
+                        <div class="offcanvas__contact-text">
+                           <a href="tel:+012-345-6789"><span
+                                 class="mailto:support@mail.com">info@maviarge.com</span></a>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+               <div class="offcanvas__social">
+                  <ul>
+                     <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                     <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                     <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                     <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                  </ul>
+               </div>
             </div>
-          </div>
-        </div>
+         </div>
       </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="container">
-        <div class="inner flex flex-content-sb flex-align-c">
-          <div class="copyright">© 2023 maviCharge. Tüm hakları saklıdır.</div>
-        </div>
+   </div>
+   <div class="offcanvas__overlay"></div>
+   <div class="offcanvas__overlay-white"></div>
+   <!-- Offcanvas area start -->
+
+   <!-- Header area start -->
+   <header>
+      <div id="header-sticky" class="header__area-2 header__transparent">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-xxl-3 col-xl-4 col-lg-6 col-6">
+                  <div class="header__logo-inner">
+                     <div class="header__logo">
+                        <a href="index.html" style="font-size: 30px; font-weight:900">
+                           <span class="text-primary">Mavi</span>Charge
+                        </a>
+                     </div>
+                     <div class="header__toggle-wrapper">
+                        <div class="header__toggle">
+                           <a class="sidebar__active d-flex align-items-center" href="javascript:void(0)">
+                              <div class="bar-icon">
+                                 <span></span>
+                                 <span></span>
+                                 <span></span>
+                              </div>
+                              <div class="header__toggle-text ml-10">
+                                 <span>MENU</span>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xxl-6 col-xl-6 col-lg-1 col-6 d-none d-xl-block">
+                  <div class="header__contact">
+                     <div class="contact__item">
+                        <div class="contact__icon">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="18.641" height="18.644"
+                              viewBox="0 0 18.641 18.644">
+                              <path id="call-svgrepo-com"
+                                 d="M47.035,50.653A7.842,7.842,0,0,1,43.372,49.4a23.811,23.811,0,0,1-5.752-4.3,21.827,21.827,0,0,1-4.319-5.75c-1.533-2.788-1.272-4.25-.98-4.875a3.891,3.891,0,0,1,1.525-1.636,7.337,7.337,0,0,1,1.192-.633l.115-.05a1.114,1.114,0,0,1,.913-.083,2.676,2.676,0,0,1,.868.666,14.429,14.429,0,0,1,2.171,3.222,3.21,3.21,0,0,1,.426,1.32A2.086,2.086,0,0,1,39,38.524c-.055.074-.109.146-.161.215-.317.416-.386.536-.34.751a7.9,7.9,0,0,0,1.922,2.851,7.567,7.567,0,0,0,2.818,1.876c.224.048.347-.025.776-.352.062-.047.125-.1.191-.144a2.1,2.1,0,0,1,1.259-.563h0a3.016,3.016,0,0,1,1.326.465,15.9,15.9,0,0,1,3.21,2.155,2.675,2.675,0,0,1,.668.866,1.123,1.123,0,0,1-.083.916c-.015.035-.032.072-.05.114a7.346,7.346,0,0,1-.636,1.189,3.892,3.892,0,0,1-1.639,1.522,2.806,2.806,0,0,1-1.23.269Z"
+                                 transform="translate(-32.098 -32.009)" fill="#636363" />
+                           </svg>
+                        </div>
+                        <div class="contact__tet">
+                           <a href="tel:+(123)123-456-7890">+90 (533) 326 8607</a>
+                        </div>
+                     </div>
+                     <div class="contact__item">
+                        <div class="contact__icon">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="19.885" height="14.287"
+                              viewBox="0 0 19.885 14.287">
+                              <path id="mail-svgrepo-com"
+                                 d="M19.885,42.4a1.014,1.014,0,0,0-1.014-1.014H1.014A1.014,1.014,0,0,0,0,42.4V54.659a1.014,1.014,0,0,0,1.014,1.014H18.871a1.014,1.014,0,0,0,1.014-1.014Zm-2.029,2.066a1.019,1.019,0,0,1-.358.776l-3.89,3.312L17.5,51.869a1.008,1.008,0,0,1-.654,1.776h-.009a1.037,1.037,0,0,1-.672-.247l-4.124-3.511L10.6,51.115a1.015,1.015,0,0,1-1.315,0L7.841,49.886,3.724,53.392a1.061,1.061,0,0,1-.688.253,1.008,1.008,0,0,1-.654-1.776l3.894-3.315L2.441,45.288a1.172,1.172,0,0,1-.412-.892.981.981,0,0,1,1.617-.747l5.976,5.089a.5.5,0,0,0,.641,0l5.976-5.089a.981.981,0,0,1,1.617.747v.071Z"
+                                 transform="translate(0 -41.386)" fill="#636363" />
+                           </svg>
+                        </div>
+                        <div class="contact__tet">
+                           <a href="mailto:seofest@example.com">info@maviarge.com</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xxl-3 col-xl-2 col-lg-6 col-6">
+                  <div class="header__right d-flex align-items-center justify-content-end">
+                     <div class="header__toggle d-md-none">
+                        <a class="sidebar__active" href="javascript:void(0)">
+                           <div class="bar-icon">
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
-    </div>
-  </footer>
-  <!-- END SITE FOOTER -->
+   </header>
+   <!-- Header area end -->
 
-  <!-- BEGIN BACK TO TOP -->
-  <a
-    href="#
-            "
-    id="backtotop"
-    class="backtotop"
-  >
-    <svg
-      width="28"
-      height="28"
-      viewBox="0 0 28 28"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M5.52344 18.5234C5.3151 18.3151 5.3151 18.0938 5.52344 17.8594L13.7266 9.69531C13.9349 9.46094 14.1432 9.46094 14.3516 9.69531L22.5547 17.8594C22.763 18.0938 22.763 18.3151 22.5547 18.5234L21.7734 19.3047C21.5651 19.5391 21.3438 19.5391 21.1094 19.3047L14.0391 12.2344L6.96875 19.3047C6.73438 19.5391 6.51302 19.5391 6.30469 19.3047L5.52344 18.5234Z"
-        fill="#ffffff"
-      ></path>
-    </svg>
-  </a>
-  <!-- END BACK TO TOP -->
+   <!-- Body main wrapper start -->
+   <main>
 
-<!-- jQuery -->
-<script src="/public/js/jquery-1.12.4.js"></script>
-<script src="/public/libs/bootstrap/js/bootstrap.min.js"></script>
-<script src="/public/libs/swiper/swiper-bundle.min.js"></script>
-<script src="/public/libs/waypoints/jquery.waypoints.min.js"></script>
-<script src="/public/libs/counter/jquery.counterup.min.js"></script>
-<script src="/public/libs/wowjs/wow.min.js"></script>
-<script src="/public/js/main.js"></script>
+      {{{body}}}
+
+      <!-- Footer area start -->
+      <footer>
+         <section class="footer__border footer-bg grey__bg p-relative z-index-11 pt-120 pb-60">
+            <div class="footer__shape">
+               <img src="/public/img/shape/footer-shape.png" alt="">
+            </div>
+            <div class="container">
+               <div class="row">
+                  <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6">
+                     <div class="footer__widget footer__col-1 mb-55">
+                        <div class="footer__title">
+                           <h3>Şirket</h3>
+                        </div>
+                        <div class="footer__link">
+                           <ul>
+                              <li><a href="#">Hakkımızda</a></li>
+                              <li><a href="/contact">İletişim</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-3 col-md-6 col-sm-6">
+                     <div class="footer__widget footer__col-2 mb-55">
+                        <div class="footer__title">
+                           <h3>Hizmetlerimiz</h3>
+                        </div>
+                        <div class="footer__link">
+                           <ul>
+                              <li><a href="/admin">Yönetim Paneli</a></li>
+                              <li><a href="/mobile">Mobil Uygulama</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                     <div class="footer__widget footer__col-3 mb-55">
+                        <div class="footer__title">
+                           <h3>Bize Ulaşın</h3>
+                        </div>
+                        <div class="footer__link">
+                           <ul>
+                              <li><a href="/contact">İletişim</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                     <div class="footer__widget mb-55">
+                        <div class="footer__logo mb-20">
+                           <a href="/" style="font-size: 30px; font-weight:900">
+                              <span class="text-primary">Mavi</span>Charge
+                           </a>
+                        </div>
+                        <div class="footer__contact mb-30">
+                           <span>Antalya Teknokent Ar-Ge 2 Binası</span>
+                           <span>Konyaaltı/ANTALYA</span>
+                        </div>
+                        <div class="touch__social">
+                           <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                           <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                           <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                           <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <div class="footer__copyright grey-bg-2">
+            <div class="container">
+               <div class="copyright__inner-2">
+                  <div class="copyright__text text-center">
+                     <p>Copyright © 2023 Tüm Hakları Saklıdır.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- Footer area end -->
+
+   </main>
+   <!-- Body main wrapper end -->
+
+   <!-- Back to top start -->
+   <div class="progress-wrap">
+      <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+   </div>
+   <!-- Back to top end -->
+
+   <!-- JS here -->
+   <script src="/public/app/js/vendor/jquery-3.6.0.min.js"></script>
+   <script src="/public/app/js/vendor/waypoints.min.js"></script>
+   <script src="/public/app/js/bootstrap.min.js"></script>
+   <script src="/public/app/js/meanmenu.min.js"></script>
+   <script src="/public/app/js/swiper-bundle.min.js"></script>
+   <script src="/public/app/js/slick.min.js"></script>
+   <script src="/public/app/js/magnific-popup.min.js"></script>
+   <script src="/public/app/js/backtotop.js"></script>
+   <script src="/public/app/js/counterup.js"></script>
+   <script src="/public/app/js/wow.min.js"></script>
+   <script src="/public/app/js/imagesloaded.pkgd.min.js"></script>
+   <script src="/public/app/js/isotope.pkgd.min.js"></script>
+   <script src="/public/app/js/ajax-form.js"></script>
+   <script src="/public/app/js/main.js"></script>
 </body>
+
 </html>

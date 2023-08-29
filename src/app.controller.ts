@@ -21,11 +21,19 @@ export class AppController {
     }
   }
 
-  @Get('services')
-  @Render('services')
+  @Get('mobile')
+  @Render('mobile')
   async get_services(){
     return {
-      title: 'Hizmetlerimiz'
+      title: 'Mobil Uygulama'
+    }
+  }
+
+  @Get('admin')
+  @Render('admin')
+  async get_admin(){
+    return {
+      title: 'Yönetici Paneli'
     }
   }
 }
